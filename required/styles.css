@@ -1,0 +1,408 @@
+ /* Estilos CSS adicionales */
+ body {
+   font-family: "Noto Sans", sans-serif !important;
+   border-top-width: 2vh;
+   border-bottom-width: 2vh;
+   border-left-width: 7vw;
+   border-right-width: 7vw;
+   border-style: solid;
+   border-color: #fef16c;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+   font-family: "Fjalla One", sans-serif;
+ }
+
+ p {
+   font-size: 15px !important;
+ }
+
+ .container {
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 20px;
+ }
+
+ /* Estilos para la sección del título */
+ .section1 {
+   text-align: center;
+   background-color: #f8f8f8;
+   padding: 3vh 0;
+   position: sticky;
+   top: 0;
+   z-index: 999;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   margin: 20px;
+ }
+
+ .text-title {
+   font-size: 4vw;
+   font-weight: bold;
+   color: #333333;
+   margin: 0;
+   padding: 10px 0;
+   text-transform: uppercase;
+ }
+
+ .text-title::after {
+   content: "";
+   display: block;
+   width: 10vw;
+   height: 0.3vh;
+   background-color: #333333;
+   margin: 1vh auto;
+ }
+
+ /* Estilos para los párrafos */
+ .text-texto {
+   font-size: 15px;
+   color: #555555;
+   line-height: 1.6;
+   text-align: justify;
+   max-width: 800px;
+   /* Limitamos el ancho del párrafo a 800px */
+   margin: 0 auto;
+   /* Centramos el párrafo dentro de la sección */
+ }
+
+ .text-texto:first-letter {
+   font-size: 28px;
+   font-weight: bold;
+   color: #fef16c;
+   float: left;
+   margin-right: 10px;
+   margin-top: 5px;
+   line-height: 1;
+ }
+
+ .text.texto::before {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 1px;
+   background-color: #cccccc;
+   margin: 20px 0;
+ }
+
+ .title-img {
+   height: 400px;
+   background-image: url(https://cdn.glitch.global/733d51da-7139-43b1-8bde-4ad3f2ea6bc2/Plaza%20de%20Armas.jpeg?v=1689453852026);
+   background-size: cover;
+   background-position: center;
+   background-color: rgba(0, 0, 0, 0.5);
+   background-blend-mode: darken;
+
+   color: white;
+ }
+
+ .title-img-small {
+   height: 200px;
+   background-blend-mode: normal;
+ }
+
+ .card {
+   border: 0 !important;
+   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+ }
+
+ .card-title {
+   min-height: 1.5rem;
+ }
+
+ .card-text {
+   min-height: 5rem;
+ }
+
+ @media (min-width: 768px) {
+   .card-title {
+     min-height: 2rem;
+   }
+
+   .card-text {
+     min-height: 10rem;
+   }
+ }
+
+ .carrusel {
+   overflow-x: scroll;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   scrollbar-width: thin;
+   scrollbar-color: #888888 #F5F5F5;
+ }
+
+ .carrusel-container {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .carrusel-container .card {
+   width: 300px;
+   flex-shrink: 0;
+   margin-right: 2rem;
+ }
+
+ /* Modal para mensaje de email (index.php) */
+ .modalDialog {
+   position: fixed;
+   font-family: Arial, Helvetica, sans-serif;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.8);
+   z-index: 99999;
+   opacity: 0;
+   -webkit-transition: opacity 400ms ease-in;
+   -moz-transition: opacity 400ms ease-in;
+   transition: opacity 400ms ease-in;
+   pointer-events: none;
+ }
+
+ .modalDialog:target {
+   opacity: 1;
+   pointer-events: auto;
+ }
+
+ .modalDialog>div {
+   width: 400px;
+   position: relative;
+   margin: 10% auto;
+   padding: 5px 20px 13px 20px;
+   border-radius: 10px;
+   background: #fff;
+   background: -moz-linear-gradient(#fff, #999);
+   background: -webkit-linear-gradient(#fff, #999);
+   background: -o-linear-gradient(#fff, #999);
+   -webkit-transition: opacity 400ms ease-in;
+   -moz-transition: opacity 400ms ease-in;
+   transition: opacity 400ms ease-in;
+ }
+
+ .close {
+   background: #606061;
+   color: #FFFFFF;
+   line-height: 25px;
+   position: absolute;
+   right: -12px;
+   text-align: center;
+   top: -10px;
+   width: 24px;
+   text-decoration: none;
+   font-weight: bold;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   border-radius: 12px;
+   -moz-box-shadow: 1px 1px 3px #000;
+   -webkit-box-shadow: 1px 1px 3px #000;
+   box-shadow: 1px 1px 3px #000;
+ }
+
+ .close:hover {
+   background: #00d9ff;
+ }
+
+
+
+ /* CSS para Video.html */
+ .image-card {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 10px;
+   margin-bottom: 20px;
+   position: relative;
+   /* Para posicionar la superposición */
+ }
+
+ .image-card h3 {
+   font-size: 1.5rem;
+ }
+
+ .image-card p {
+   font-size: 1rem;
+   color: #666;
+ }
+
+
+ @media (min-width: 768px) {
+   .image-card h3 {
+     min-height: 2rem;
+   }
+
+   .image-card p {
+     min-height: 8rem;
+   }
+ }
+
+
+
+ /* Estilos para la superposición (overlay) */
+ .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   /* Color de fondo con transparencia */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0;
+   /* Inicialmente la superposición estará oculta */
+   transition: opacity 0.2s ease;
+   /* Animación de transición */
+   border-radius: 5px;
+ }
+
+ /* Mostrar la superposición cuando se hace hover sobre la imagen */
+ .image-card:hover .overlay {
+   opacity: 1;
+ }
+
+ /* Estilos para el ícono de reproducir video */
+ .play-icon {
+   width: 60px;
+   height: 60px;
+   background: url("https://cdn.glitch.global/733d51da-7139-43b1-8bde-4ad3f2ea6bc2/play.png?v=1689630232816") center no-repeat;
+   background-size: contain;
+ }
+
+ /* Carrusel de video.html */
+ /* Estilos para hacer las imágenes más pequeñas */
+ .carousel-inner .carousel-item img {
+   max-height: 400px;
+   /* Ajusta la altura máxima de la imagen */
+   object-fit: cover;
+   /* Evita que la imagen se deforme */
+ }
+
+
+
+
+ /* Estilos para photo.html */
+
+.zoom {
+  transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+  transform: scale(2.0);
+}
+
+
+
+
+ .photo-card {
+   margin-bottom: 20px;
+   overflow: hidden;
+   position: relative;
+   padding-top: 100%;
+   /* Proporción 1:1 (cuadrada) */
+ }
+
+ .photo-card img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   /* Ajustar imagen sin deformar */
+   transition: transform 0.3s ease;
+ }
+
+ .photo-card:hover img {
+   transform: scale(1.1);
+ }
+
+ .modal {
+   display: none;
+   position: fixed;
+   z-index: 9999;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+ .close {
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   font-size: 30px;
+   color: #fff;
+   cursor: pointer;
+ }
+
+ .close:hover {
+   color: #ccc;
+ }
+
+ .galery-title h1 {
+   text-align: center;
+   font-size: 3.5rem;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 30px;
+ }
+
+ .galery-title p {
+   text-align: center;
+   font-weight: bold;
+ }
+
+
+ /* Estilos para publication.html */
+ .publication-title h1 {
+   text-align: center;
+   font-size: 3.5rem;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 30px;
+ }
+
+ .publication-title p {
+   text-align: center;
+   font-weight: bold;
+ }
+
+ /* Estilos específicos para los botones */
+ .botones-container {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+
+ /* Estilos específicos para el contenedor del chat */
+ .chat-container {
+  display: none;
+  /* Inicialmente ocultar ambos contenedores */
+  margin-bottom: 20px;
+  text-align: center;
+ }
+
+ .nueva_publicacion-container {
+   display: none;
+   /* Inicialmente ocultar ambos contenedores */
+   margin-bottom: 20px;
+ }
+
+ /* iframe del chat  */
+ .iframe-chat {
+  width: 100vh;
+ }
+
+
+
+ /* Estilos especificos de subir.php */
+ 

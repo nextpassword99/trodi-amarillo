@@ -1,0 +1,62 @@
+ /* Estilos CSS adicionales */
+ body {
+   font-family: "Noto Sans", sans-serif !important;
+   border-top-width: 2vh;
+   border-bottom-width: 2vh;
+   border-left-width: 7vw;
+   border-right-width: 7vw;
+   border-style: solid;
+   border-color: #fef16c;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+   font-family: "Fjalla One", sans-serif;
+ }
+
+ p {
+   font-size: 15px;
+ }
+
+ .container {
+   max-width: 960px;
+   margin: 0 auto;
+   padding: 20px;
+ }
+
+
+ .resusltados-titulo {
+  color: #7b5de7;
+  text-decoration: none;
+ }
+ .resusltados-titulo:hover {
+  color: #2500ac;
+  text-decoration: underline;
+ }
+
+ /* .contenedor-resultados-publicaciones {
+  max-width: 500px;
+ }
+
+ .contenedor-resultados-photo {
+  max-width: 400px;
+ } */
+
+ .resultado {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2 4;
+ }
+
+ .result-photo {
+  max-width: 100%;
+ }
+
+
+ .resaltado {
+  background-color: yellow; /* Cambia el color de fondo a tu elección */
+  font-weight: bold; /* O cualquier otro estilo de fuente que desees */
+}

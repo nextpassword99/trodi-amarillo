@@ -1,0 +1,388 @@
+/* Resetear estilos predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-color: #ffffff;
+    color: #333;
+}
+
+form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+}
+
+form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+input {
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Chat Box Styling */
+#wrapper,
+#loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #ffffff;
+    width: 100%;
+    max-width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#loginform {
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+#loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #444;
+}
+
+#chatbox {
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 1%;
+    margin-bottom: 25px;
+    padding: 10px;
+    background: #fef26c2f;
+    height: 380px;
+    width: 100%;
+    max-width: 95%;
+    border: 1px solid #ccc;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@media (max-width: 576px) {
+    #chatbox {
+        height: 470px;
+    }
+}
+
+
+
+#usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #ffae00;
+    padding: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+#name {
+    border-radius: 4px;
+    border: 1px solid #ffae00;
+    padding: 8px;
+    font-size: 1rem;
+    color: #333;
+    margin: 1px;
+}
+
+#submitmsg,
+#enter {
+    background: #ffae00;
+    border: none;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#error-message {
+    color: #dc3545;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#menu {
+    padding: 15px 25px;
+    display: flex;
+    background-color: #ffc107;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#menu p.welcome {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+a#exit {
+    color: white;
+    background: #af1111;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Estilo de los mensajes */
+.msgln {
+    margin: 0 0 5px 0;
+}
+
+
+
+.msgln span.left-info {
+    color: rgb(201, 41, 41);
+}
+
+.msgln span.chat-time {
+    color: #666;
+    font-size: 60%;
+    vertical-align: super;
+}
+
+.msgln b.user-name,
+.msgln b.user-name-left {
+    font-weight: bold;
+    background: #546e7a;
+    color: white;
+    padding: 2px 4px;
+    font-size: 90%;
+    border-radius: 4px;
+    margin: 0 5px 0 0;
+}
+
+/* Mensaje de salida de usuario */
+.msgln b.user-name-left {
+    background: rgb(201, 41, 41);
+}
+
+
+
+/*----- Nuevos -----*/
+/* Estilos para la descripcion */
+.description {
+    display: grid;
+    place-items: center;
+
+    justify-content: center;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    width: 50%;
+    font-size: 12px;
+
+}
+
+
+/* Estilo para los mensajes del usuario */
+.date-message {
+    float: none;
+    color: black;
+    background-color: #d607ff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px;
+    width: 70%;
+}
+
+
+.container-msg {
+    overflow: hidden;
+    margin: 2%;
+
+}
+
+/* .container-name {
+
+} */
+
+.user-name {
+    float: right;
+    display: flex;
+    width: 50px;
+    margin-left: 1rem;
+    background-color: #546e7a;
+    color: white;
+    /* padding: 2px 4px; */
+    border-radius: 4px;
+    padding: 10px;
+    /* clip-path: circle(50% at 50% 50%); */
+    font-size: 12px;
+    /* border-radius: 50px; */
+
+}
+
+
+.other-name {
+    display: flex;
+    width: 50px;
+    float: left;
+    margin-right: 1rem;
+    background-color: #546e7a;
+    color: white;
+    /* padding: 2px 4px; */
+    border-radius: 4px;
+    padding: 10px;
+    /* clip-path: circle(50% at 50% 50%); */
+    font-size: 12px;
+    /* border-radius: 50px; */
+}
+
+
+.msg-user {
+    float: right;
+    /* float: right; */
+    /* width: 48%; */
+}
+
+
+.msg-other {
+    float: left;
+}
+
+
+.text-msg-user {
+    background-color: #ffc107;
+    /* background-image: linear-gradient(85deg, #ee087f 0%, #DD2A7B 25%, #9858ac 50%, #8134AF 75%, #515BD4 100%); */
+    border-radius: 10px;
+    /* font-size: 14px; */
+    font-size: 80%;
+    color: black;
+    padding: 7px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 5px 2px;
+}
+
+
+.text-msg-other {
+    background-color: #efefef;
+    /* background-image: linear-gradient(85deg, #ee087f 0%, #DD2A7B 25%, #9858ac 50%, #8134AF 75%, #515BD4 100%); */
+    border-radius: 10px;
+    /* font-size: 14px; */
+    font-size: 80%;
+    color: #646464;
+    padding: 7px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 5px 2px;
+}
+
+.message-time {
+    color: #777;
+    font-size: 10px;
+}
+
+
+
+
+/* Otros recursos para el chat */
+
+@media (max-width: 576px) {
+    .form-registro {
+        display: grid;
+    }
+
+}
+
+.btn-enter {
+    background: #ffae00;
+    border: none;
+    color: black;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+/* Modal de registro */
+
+.modal {
+    display: none;
+    /* Por defecto, el modal estará oculto */
+    position: fixed;
+    /* Permite posicionar el modal en la pantalla */
+    z-index: 1;
+    /* Asegura que el modal esté por encima del resto del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Permite hacer scroll dentro del modal si es necesario */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fondo semi-transparente para el modal */
+}
+
+.title-modal {
+    font-size: 2em;
+    margin: 5px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    /* Ancho máximo del modal */
+}
+
+
+
+
+.password-field {
+    position: relative;
+    display: inline-flex;
+}
+
+#togglePasswordBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+
+
+button#togglePasswordBtn:active {
+	background-color: #6c757d;
+	border-color: #6c757d;
+}
+
+

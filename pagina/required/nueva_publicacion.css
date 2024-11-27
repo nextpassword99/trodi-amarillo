@@ -1,0 +1,49 @@
+body {
+    font-family: "Noto Sans", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Fjalla One", sans-serif;
+}
+
+p {
+    font-size: 15px !important;
+}
+
+
+.elemento {
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.form {
+    display: block;
+    padding: 15px 25px;
+}
+
+.contenedor-titulo {
+    padding: 15px 25px;
+    background-color: #ffc107;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-family: "Fjalla One", sans-serif;
+    color: #444;
+}
+
+h4 {
+    text-decoration: auto;
+}
+
+.form-control {
+    font-size: 13px;
+}
